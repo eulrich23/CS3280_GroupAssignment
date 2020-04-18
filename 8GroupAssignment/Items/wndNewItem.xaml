@@ -1,0 +1,26 @@
+﻿<Window x:Class="_8GroupAssignment.Items.wndNewItem"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_8GroupAssignment.Items"
+        mc:Ignorable="d"
+        Title="New Item" Height="343.55" Width="426.542" Background="#FFDAD8D8">
+    <Grid>
+        <Button x:Name="btnCancel" Content="Cancel" Margin="245,255,60,10" Click="btnCancel_Click"/>
+        <Button x:Name="btnSave" Content="Save" Margin="59,255,247,10" Click="btnSave_Click"/>
+        <GroupBox x:Name="groupBox" Header="Information" Height="197" Margin="43,21,43,0" VerticalAlignment="Top">
+            <Grid HorizontalAlignment="Left" Height="175" Margin="0,0,-2,-12" VerticalAlignment="Top" Width="323">
+                <TextBox x:Name="tbCode" HorizontalAlignment="Left" Height="23" Margin="105,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" HorizontalContentAlignment="Right"/>
+                <TextBox x:Name="tbCost" HorizontalAlignment="Left" Height="23" Margin="105,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" PreviewKeyDown="tbCost_PreviewKeyDown" HorizontalContentAlignment="Right"/>
+                <Label x:Name="lblCode" Content="Code:" HorizontalAlignment="Left" Margin="10,15,0,0" VerticalAlignment="Top" Width="86" HorizontalContentAlignment="Right"/>
+                <Label x:Name="lblCost" Content="Cost:" HorizontalAlignment="Left" Margin="10,46,0,0" VerticalAlignment="Top" Width="86" HorizontalContentAlignment="Right"/>
+                <Label x:Name="lblDescription" Content="Description:" HorizontalAlignment="Left" Margin="10,82,0,0" VerticalAlignment="Top" Width="86" HorizontalContentAlignment="Right"/>
+                <TextBox x:Name="tbDescription" HorizontalAlignment="Left" Height="80" Margin="105,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208"/>
+            </Grid>
+        </GroupBox>
+        <Label x:Name="lblError" Content="" Margin="84,215,84,0" VerticalAlignment="Top" Foreground="Red" HorizontalAlignment="Center" Width="251" HorizontalContentAlignment="Center" Height="29"/>
+        <Label x:Name="lblError2" Content="" Margin="84,232,84,0" VerticalAlignment="Top" Foreground="Red" HorizontalAlignment="Center" Width="251" HorizontalContentAlignment="Center" Height="28"/>
+
+    </Grid>
+</Window>
